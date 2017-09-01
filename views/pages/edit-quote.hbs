@@ -1,0 +1,9 @@
+{{#each quotes}}
+<form action="/edit/{{_id}}" method="POST">
+
+    <input type="text" value="{{name}}" name="name">
+    <input type="text" value="{{quote}}" name="quote">
+    <button type="submit">Submit</button>
+
+</form>
+{{/each}}

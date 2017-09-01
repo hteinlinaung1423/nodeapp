@@ -1,0 +1,25 @@
+{
+  "name": "mongodbproject",
+  "version": "1.0.0",
+  "description": "mongodbexample with ejs express ",
+  "main": "app.js",
+  "scripts": {
+    "test": "testing"
+  },
+  "keywords": [
+    "express",
+    "ejs",
+    "mongodb"
+  ],
+  "author": "htein",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "firebase": "^4.3.0",
+    "mongodb": "^2.2.31",
+    "nodemon": "^1.11.0"
+  }
+}

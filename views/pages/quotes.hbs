@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test App</title>
+</head>
+<body>
+May Express be with you.
+
+<ul class="quotes">
+    {{#each quotes}}
+    <li class="quote">
+        <span>{{name}}</span>
+        <span>{{quote}}</span>
+        <a class="a-inside delete" href="../delete/{{id}}">Delete</a>
+        <a class="a-inside delete" href="../edit/{{id}}">Edit</a>
+    </li>
+    {{/each}}
+</ul>
+
+<form action="/quotes" method="POST">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="quote" name="quote">
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
